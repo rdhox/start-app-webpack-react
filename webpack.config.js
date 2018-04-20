@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-    mode: "development",
+    mode: 'development',
     entry: './src/index.js',
     plugins: [
         new CleanWebpackPlugin(['dist']),
@@ -28,7 +28,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: "babel-loader"
+                loader: 'babel-loader'
             },
             {
                 test: /\.css$/,
@@ -51,7 +51,7 @@ module.exports = {
             }
         ]
     }
-}
+};
 
 
 
